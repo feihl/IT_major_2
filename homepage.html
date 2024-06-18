@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website Contents</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+</head>
+<body>
+<!--NAV-->
+        <nav class="nav">
+            <a href="homepage.html" class="logo">Personal Website Contents</a>
+
+            <ul class="nav-links">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./events.html">Events</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+
+    <section id="home">
+        <div class="intro">
+            <p>"Greetings, I am pleased to see <br>
+                that we are different. May we together <br>
+                become greater than the sum of both of us."</p>
+        </div>
+        <div class="by">
+            <p>Leonard Nimoy</p>
+        </div>
+        <div class="content">
+            <a href="homefeatured.html" class="btn2">VIEW FEATURED CONTENT</a>
+        </div>
+    </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+            <img class="mySlides" src="./pic/1.jpg" alt="Photo 1" width="430px" height="550px">
+            <img class="mySlides" src="./pic/2.jpg" alt="Photo 2" width="430px" height="550px">
+            <img class="mySlides" src="./pic/3.jpeg" alt="Photo 3" width="430px" height="550px">
+        </div>
+        
+        <div class="about-col-2">
+          <h1 class="me">ABOUT ME</h1><br   >
+          <p>           &nbsp; &nbsp; As an IT professional specializing in front-end development and graphic design, my goals revolve around honing my skills in these areas. I'm passionate about creating visually stunning and user-friendly websites and applications. I value creativity, innovation, and continuous learning as I strive to excel in the dynamic field of technology.</p>
+
+          <div class="ex">
+            <p class="ex-links act-link" onclick="opentab('skills')">Skills</p>
+            <p class="ex-links" onclick="opentab('experience')">Experience</p>
+            <p class="ex-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="contents act-tab" id="skills">
+            <ul>
+                <li><span>UI/UX</span><br>Designing Web/App Interface </li>
+                <li><span>Web Development</span><br>Web App Development</li>
+                <li><span>Graphic Designer</span><br>Designing Logo</li>
+            </ul>
+          </div>
+          <div class="contents" id="experience">
+            <ul>
+                <li><span>2021 - Current</span><br>UI/UX Training Design Web/App @ ACLC </li>
+                <li><span>2019 - 2021</span><br>Multimedia Training @ FSUU</li>
+                <li><span>2018 - 2019</span><br>Web Development Training @ DICT</li>
+            </ul>
+          </div>
+          <div class="contents" id="education">
+            <ul>
+                <li><span>2019-2021</span><br>UI/UX Training Design Web/App @ ACLC</li>
+                <li><span>Web Development</span><br>WAD from MIT CSU</li>
+                <li><span>Graphic Designer</span><br>GD from FSUU</li>
+            </ul>
+          </div>
+        </div>  
+      </div>
+      <a href="./pdf/Suazo.pdf" download class="button">VIEW CV</a>
+    </div>
+</section><br><br>
+
+<section id="contact">
+    <div class="container1">
+        <div class="row">
+            <div class="contact-left">
+                    <h2>Contact Me</h2>
+                    <p>Feel free to reach out to me for any inquiries or collaborations.</p>
+                    <p><i class="fas fa-solid fa-paper-plane"></i>Email: example@example.com</p>
+                    <p><i class="fas fa-phone-alt"></i>Phone: 123-456-7890</p>
+                    <p><i class="fas fa-address-book"></i>Address: 123 Main Street, City, Country</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/itsfeihlsuazo/?viewas=100000686899395&show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/invites/contact/?i=179mfocbq107z&utm_content=1zfiwed" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/jobs?src=go-pa&trk=sem-ga_campid.18853522261_asid.146084015209_crid.633923221417_kw.linkedin_d.c_tid.kwd-296170574619_n.g_mt.e_geo.1011146&mcid=6994434350142418944&cid=&gad_source=1&gclid=CjwKCAjwh4-wBhB3EiwAeJsppDrzOUCQGR5UMVgGLwocaHNnl1Fsob-7VntgDVVJq7_cUjxjDrGShxoCqnUQAvD_BwE&gclsrc=aw.ds" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>              
+                <div class="contact-right">
+                    <form action="#" method="POST" class="contact-form">
+                        <input type="text"name="name"  placeholder="Your Name:">
+                        <input type="email" name="email" placeholder="Your Email:" required>
+                        <textarea name="message" rows="4" placeholder="Your Message:"></textarea>
+                    <button id="btn" type="submit">SUBMIT</button>
+                </form> 
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="copyright">
+        <p>
+            &copy; Gisueppi Feihl Suazo. 2024 Personal Website Contents (Midterm Project/Exam). All rights reserved.
+        </p>
+    </div>
+</footer>
+<script src="script/script.js"></script>
+</body>
+</html>
